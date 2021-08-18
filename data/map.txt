@@ -15866,6 +15866,61 @@ system Matar
 			distance 332
 			period 23.3043
 
+system Mayday
+	pos -152.414 -83.426
+	habitable 320
+	link Oblate
+	asteroids "small rock" 8 5.89
+	asteroids "large rock" 5 4.2275
+	asteroids "small metal" 2 4.56
+	asteroids "medium metal" 10 4.465
+	asteroids "large metal" 6 6.1275
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/desert9
+		distance 596.909
+		period 326.097
+		offset 203.532
+	object Voltairine
+		sprite planet/gas17
+		distance 1365.55
+		period 1128.36
+		offset 46.7212
+		object Declaration
+			sprite planet/station1
+			distance 194
+			period 11.5445
+		object Haymark
+			sprite planet/ice0
+			distance 295
+			period 21.6474
+	object
+		sprite planet/gas7
+		distance 2120.15
+		period 2182.9
+		offset 52.3083
+		object
+			sprite planet/lava0
+			distance 232
+			period 12.5708
+	object
+		sprite planet/europa
+		distance 2901.4
+		period 3494.59
+		offset 212.248
+
 system Mebla
 	pos -814.587 555.051
 	government Coalition
@@ -26865,6 +26920,20 @@ planet "Deadman's Cove"
 		threshold 2500
 		fleet "Small Core Pirates" 45
 
+planet Declaration
+	attributes station 
+	landscape union2
+	description `A relatively antique station by galactic standards, Declaration has served a myriad of purposes in its lifetime. It was originally developed by the Syndicate for initial mining efforts in the system, and after Voltairine's gases showed unexpected promise, the station served as the primary living space for those working on Haymark's terraforming process. After Haymark became the center of civilization within the system, the Syndicate retained Declaration as their corporate outpost in the system, since the legality of Haymark's ownership was much less clear-cut.`
+	description `When the system became obsolete following the development of alternative technologies, Declaration took on yet another purpose: a prison without bars. For a time, the term 'Getting Declared' was feared throughout Syndicate space by workers who'd earned the ire of Syndicate executives. Union organizers, activists, even those who just knew a little too much – all of them would end up getting permanently assigned to this tiny backwater station at the fringes of space. In recent times, the station has unsurprisingly become an unofficial outpost of the Union, and the Syndicate has gradually become less comfortable with sending its enemies here.`
+	spaceport `Once set aside as a suite for the rare visiting executive, this part of the station has recently been turned into a receiving area, a general community space, and a bar. Presumably, this transformation hasn't been signed off on by the Syndicate higher-ups, but that hardly seems to bother anyone around here.`
+	spaceport `People in well-worn jumpsuits huddle around long metal tables, playing games and laughing uproariously. As you approach, however, these groups immediately grow quiet, and they fix you with blank, wary stares as you pass by them. Suspicious whispers follow you as you make your way through the room, and you almost feel as though you've broken some taboo by being here.`
+	outfitter "Ammo North"
+	bribe 0.5
+	security 500
+	tribute 400
+		threshold 2500
+		fleet "Small Union"
+
 planet Deep
 	attributes south fishing
 	landscape land/sea3
@@ -27532,6 +27601,20 @@ planet Haven
 	tribute 700
 		threshold 3000
 		fleet "Small Northern Pirates" 21
+
+planet Haymark
+	attributes core factory urban
+	landscape union1
+	description `Haymark is a moon orbiting an exceptionally stable gas giant, Voltairine, and was originally terraformed and settled as part of a gas mining project conducted by the Republic and the Syndicate working in tandem. In its heyday, Haymark was a crucial outpost used for processing a rare form of quasi-noble gas harvested from Voltairine, necessary for the production of excimer-based fuel. Haymark's relevance declined rapidly following the development of alternative fuel sources, and the formerly booming moon has gradually become a grimy and forlorn place. It stubbornly survives only through maintaining very strong mutual aid programs and providing other planets with an independent alternative to Syndicate labor and services. In more recent times, Haymark has also become the de facto refuge and headquarters of the Syndicate's exiled Union organizers. As no group ever held full ownership over Haymark, and neither the Republic nor the Syndicate cares enough these days to claim responsibility for it, the planet's labor unions now serve as its governance. Haymark currently exists in a legal gray zone, allowing it to retain a unique independence at the fringes of human space. Due to the moon's culture of far-left politics and its association with anarchism, it's sometimes been thought of as a pirate planet, a common misconception that the Syndicate is all too happy to reinforce.`
+	spaceport `Most of Haymark's infrastructure still revolves around the moon's intended purpose as a processing facility. This spaceport was originally only meant to be a stop-off for mining ships to unload their harvests, and while it has been refitted for common use, the tube-lined brutalist architecture still serves as an ever-present reminder of the moon's origins.`
+	shipyard "Core Pirates"
+	shipyard "Northern Pirates"
+	outfitter "Basic Outfits"
+	outfitter "Ammo North"
+	bribe 0.05
+	tribute 500
+		threshold 3000
+		fleet "Large Union"
 
 planet Haze
 	attributes deep factory
@@ -29718,6 +29801,11 @@ planet Vinci
 	tribute 2800
 		threshold 5000
 		fleet "Large Republic" 11
+		
+planet Voltairine
+	landscape union3
+	description `Voltairine is an exceptionally calm gas giant, mainly composed of a variety of noble gases. It's most notable for being one of the few gas giants that can be visited with basic starships, as it possesses a unique atmosphere that doesn't react explosively to standard engines. For this reason, Republic science considers the Voltairinic gases to be only quasi-noble, seeming to be strangely redox-resistant variants of the more common noble gases found throughout galactic space. When it was discovered that Voltairinic gases could be rapidly oxidized by bonding them into an excimer with foreign gases, an efficient process that generated significant energy with little danger, the gas giant quickly became a site of galactic interest.`
+	description `For a time, the Mayday system – formerly only relevant as an emergency charging area for ships at the fringes of space – was the center of an excimer-based tech boom. As the decades went on, however, more broadly-applicable fuel technology was developed that didn't rely on Voltairinic gases, and the galaxy's interest in the gases' potential quickly waned. These days, Voltairine is really only relevant to those who live within its system, as well as the occasional curious scientist.`
 
 planet Warfeed
 	attributes unfettered

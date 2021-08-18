@@ -434,6 +434,7 @@ government "Pirate"
 		"Korath" -.01
 		"Merchant" -.1
 		"Syndicate" -.01
+		"Union" -.01
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly pirate"
@@ -557,6 +558,7 @@ government "Syndicate"
 		"Merchant" .3
 		"Pirate" -.4
 		"Korath" -.5
+		"Union" -.5
 	"bribe" .08
 	"friendly hail" "friendly syndicate"
 	"hostile hail" "hostile syndicate"
@@ -599,6 +601,23 @@ government "Uninhabited"
 	color .4 .4 .4
 	"bribe" 0
 	"fine" 0
+
+government "Union"
+	swizzle 6
+	color .78 0 0
+	
+	"attitude toward"
+		"Merchant" .3
+	
+		"Korath" -.01
+		"Syndicate" -.5
+		"Pirate" -.2
+	"bribe" .05
+	"fine" 0
+	"friendly hail" "friendly pirate"
+	"hostile hail" "hostile pirate"
+	raid "pirate raid"
+	
 
 government "Ember Waste"
 	"display name" "???"
